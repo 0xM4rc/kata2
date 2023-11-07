@@ -3,15 +3,15 @@ package src.software.ulpgc.kata2;
 import java.io.File;
 import java.util.List;
 
-public class CsvFileElectricVehicleLoader implements Loader{
+public class CsvFileElectricVehicleLoader implements ElectricVehicleLoader{
 
     private File file;
 
-    public static OrganizationLoader with(File file) {
-        return new CsvFileOrganizationLoader(file);
+    public static ElectricVehicleLoader with(File file) {
+        return new CsvFileElectricVehicleLoader(file);
     }
 
-    private CsvFileOrganizationLoader(File file) {
+    private CsvFileElectricVehicleLoader(File file) {
         this.file = file;
     }
 
