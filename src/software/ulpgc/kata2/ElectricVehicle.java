@@ -29,6 +29,9 @@ public class ElectricVehicle {
         return model;
     }
 
-    
+    @Override
+    public String toString() {
+        return(this.county_city+" "+this.make+" "+this.model+" "+this.model_year+"\n");
+    }
 
 }
