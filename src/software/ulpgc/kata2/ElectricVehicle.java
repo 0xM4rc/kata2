@@ -1,24 +1,30 @@
 package src.software.ulpgc.kata2;
 
 public class ElectricVehicle {
-    private final String county_city;
-    private final String model_year;
+    private final String county;
+    private final String city;
+    private final String model_Year;
     private final String make;
     private final String model;
-
-    public ElectricVehicle(String county_city, String model_year, String make, String model) {
-        this.county_city = county_city;
-        this.model_year = model_year;
+    
+    public ElectricVehicle(String county, String city, String model_Year, String make, String model) {
+        this.county = county;
+        this.city = city;
+        this.model_Year = model_Year;
         this.make = make;
         this.model = model;
     }
 
-    public String getCounty_city() {
-        return county_city;
+    public String getCounty() {
+        return county;
     }
 
-    public String getModel_year() {
-        return model_year;
+    public String getCity() {
+        return city;
+    }
+
+    public String getModel_Year() {
+        return model_Year;
     }
 
     public String getMake() {
@@ -27,11 +33,6 @@ public class ElectricVehicle {
 
     public String getModel() {
         return model;
-    }
-
-    @Override
-    public String toString() {
-        return(this.county_city+" "+this.make+" "+this.model+" "+this.model_year+"\n");
     }
 
 }
