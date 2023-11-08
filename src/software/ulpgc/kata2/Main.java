@@ -17,10 +17,5 @@ public class Main {
         for (String key : map.keySet()) {
             System.out.println(key+" = "+map.get(key));
         }
-
-        // GraphicalRepresentation histogram = new HistogramRepresentation(map);
-        // histogram.show();
-        
-        // TODO : remove GraphicalRepresentation and HistogramRepresentation
     }
 }
