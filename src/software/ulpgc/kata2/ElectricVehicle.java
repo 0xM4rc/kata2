@@ -35,4 +35,11 @@ public class ElectricVehicle {
         return model;
     }
 
+    @Override
+    public String toString() {
+        return "ElectricVehicle [county=" + county + ", city=" + city + ", model_Year=" + model_Year + ", make=" + make
+                + ", model=" + model + "]";
+    }
+
+    
 }

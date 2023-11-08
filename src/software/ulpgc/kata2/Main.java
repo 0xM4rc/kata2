@@ -11,10 +11,16 @@ public class Main {
                         "C:/Users/marc/Desktop/Tercero/IS2/katas/kata2/assets/csvFiles/Electric_Vehicle_Population_Data_simplified.csv"))
                 .load();
         
+        
         ElectricVehicleStatistic statisctic = new YearsElectricVehicleStatic();
         Map<String, Integer> map = statisctic.calculate(vehicles);
         for (String key : map.keySet()) {
             System.out.println(key+" = "+map.get(key));
         }
+
+        // GraphicalRepresentation histogram = new HistogramRepresentation(map);
+        // histogram.show();
+        
+        // TODO : remove GraphicalRepresentation and HistogramRepresentation
     }
 }
