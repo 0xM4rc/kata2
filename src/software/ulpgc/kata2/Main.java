@@ -14,7 +14,7 @@ public class Main {
         Map<String, Integer> map = statistic.calculate(vehicles);
         for (String year:
                 map.keySet()) {
-            System.out.println(year+" = "+map.get(year));
+            System.out.println(year+" = "+map.get(year));//
         }
     }
 }
